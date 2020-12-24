@@ -20,16 +20,16 @@ public class TestBase {
     }
 
     static void driverSetup() {
-        String browser = BrowserType.CHROME;
-        if (browser == BrowserType.FIREFOX) {
+        String browser = BrowserType.FIREFOX;
+        if (browser.equals(BrowserType.FIREFOX)) {
             System.setProperty("webdriver.gecko.driver", "C:\\Users\\Александр\\Documents\\GitHub\\java_pft\\testing_web\\geckodriver.exe");
             driver = new FirefoxDriver();
         }
-        if (browser == BrowserType.CHROME) {
+        else if (browser.equals(BrowserType.CHROME)) {
             System.setProperty("webdriwer.chrome.driver", "C:\\Users\\Александр\\Documents\\GitHub\\java_pft\\testing_web\\chromedriver.exe");
             driver = new ChromeDriver();
         }
-        if (browser == BrowserType.EDGE) {
+        else if (browser.equals(BrowserType.EDGE)) {
             System.setProperty("webdriver.edge.driver", "C:\\Users\\Александр\\Documents\\GitHub\\java_pft\\testing_web\\msedgedriver.exe");
             driver = new EdgeDriver();
         }
@@ -50,6 +50,7 @@ public class TestBase {
        // System.setOut(new PrintStream(System.out, true, "UTF-8"));
         TestBase.driverSetup();
         TestBase.rozetkaStart();
+        this.toString();
     }
 
     @AfterMethod

@@ -11,21 +11,19 @@ public class RozetkaTesting1 extends TestBase{
 
     @Test
     public void testingRozetka1() {
-        testCase1();
-    }
-
-    public static void testCase1() {
-        driver.get("http://rozetka.com.ua");
-        String finderPlaceholder = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("placeholder");
-        System.out.println(finderPlaceholder);
-        String finderText = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("value");
-        System.out.println(finderText);
-        driver.findElement(By.xpath("//input[@name='search']")).sendKeys("qwerty");
-        finderText = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("value");
-        System.out.println(finderText);
 
 
-    }
+            driver.get("http://rozetka.com.ua");
+            String finderPlaceholder = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("placeholder");
+            System.out.println(finderPlaceholder);
+            String finderText = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("value");
+            System.out.println(finderText);
+            driver.findElement(By.xpath("//input[@name='search']")).sendKeys("qwerty");
+            finderText = driver.findElement(By.xpath("//input[@name='search']")).getAttribute("value");
+            System.out.println(finderText);
+        }
+
+
 
     @BeforeMethod(alwaysRun = true)
     public void setUp(){
