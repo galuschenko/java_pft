@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="sandbox" target="15" />
+      <module name="sandbox.main" target="15" />
+      <module name="sandbox.test" target="15" />
+      <module name="testing_web" target="15" />
+      <module name="testing_web.main" target="15" />
+      <module name="testing_web.test" target="15" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-Dfile.encoding=UTF-8" />

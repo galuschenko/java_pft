@@ -8,7 +8,7 @@
         <option name="testRunner" value="CHOOSE_PER_TEST" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="15" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/sandbox" />
@@ -20,7 +20,7 @@
         <option name="testRunner" value="CHOOSE_PER_TEST" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/testing_web" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="15" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/testing_web" />
