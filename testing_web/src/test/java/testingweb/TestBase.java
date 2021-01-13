@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 
 public class TestBase {
 
-    static WebDriver driver;
+   public static WebDriver driver;
 
     public static void quit() {
         driver.quit();
@@ -22,7 +22,7 @@ public class TestBase {
     static void driverSetup() {
         String browser = BrowserType.FIREFOX;
         if (browser.equals(BrowserType.FIREFOX)) {
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\Александр\\Documents\\GitHub\\java_pft\\testing_web\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "/home/alex/Документы/GitHub/java_pft/testing_web/geckodriver.exe");
             driver = new FirefoxDriver();
         }
         else if (browser.equals(BrowserType.CHROME)) {
